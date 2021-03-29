@@ -1,12 +1,7 @@
 import "../styles/global.css";
-import { ChallangesProvider } from "../contexts/ChallengesContext";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <ChallangesProvider>
-      <Component {...pageProps} />
-    </ChallangesProvider>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
